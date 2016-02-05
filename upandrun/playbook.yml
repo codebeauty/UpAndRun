@@ -1,0 +1,34 @@
+---
+- hosts: all
+  vars:
+    user: Mathias Bachmann
+    username: Matze
+    useremail: design@designerdrug.net
+    applications:
+      - 1password
+      - adium
+      - alfred
+      - charles
+      - dropbox
+      - duet
+      - firefox
+      - google-chrome
+      - handbrake
+      - microsoft-office
+      - phpstorm
+      - sequel-pro
+      - sketch
+      - sourcetree
+      - sublime-text
+      - virtualbox
+    brews:
+      - rbenv
+      - ruby-build
+      - node
+      - wget
+      - git
+      - bash
+      - ruby
+      - jq
+      - mysql
+      - openssl
