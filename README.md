@@ -5,7 +5,7 @@
 
 You are an Administrator and you get new iMacs? All Macs should have the same applications and settings?
 
-Just use UpAndRun and use your time more effectively.
+Just use Up&Run and use your time more effectively.
 
 
 ## BACKGROUND
