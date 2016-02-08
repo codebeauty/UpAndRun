@@ -1,9 +1,6 @@
 ---
 - hosts: all
   vars:
-    user: Mathias Bachmann
-    username: Matze
-    useremail: design@designerdrug.net
     applications:
       - 1password
       - adium
@@ -19,7 +16,7 @@
       - sequel-pro
       - sketch
       - sourcetree
-      - sublime-text
+      - sublime-text3
       - virtualbox
     brews:
       - rbenv
@@ -32,3 +29,8 @@
       - jq
       - mysql
       - openssl
+  tasks:
+    - include: tasks/checkAndSetupBasics.yml
+    - include: tasks/installApplications.yml
+    - include: tasks/installBrews.yml
+    - include: tasks/settings/changeMacOSXSettings.yml

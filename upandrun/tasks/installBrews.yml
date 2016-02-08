@@ -1,0 +1,4 @@
+- name: UpAndRun | Install Brews
+  homebrew: name={{ item }} state=present
+  with_items: brews
+  when: isBrewInstalled

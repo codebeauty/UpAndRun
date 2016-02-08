@@ -1,0 +1,33 @@
+---
+
+- name: "UpAndRun | Mac OS X: Reduce transparency on windows"
+  shell: defaults write com.apple.universalaccess reduceTransparency -bool true
+
+- name: "UpAndRun | Mac OS X: Disable transparency on menu bar"
+  shell: defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
+
+- name: "UpAndRun | Mac OS X: Set icon size in Dock to 32"
+  shell: defaults write com.apple.dock tilesize -int 32
+
+- name: "UpAndRun | Mac OS X: Avoid .DS_Store files on network"
+  shell: defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+
+- name: "UpAndRun | Mac OS X: Don't hide ~/Library"
+  shell: chflags nohidden ~/Library
+
+- name: "UpAndRun | Mac OS X: Don't hide ~/Library"
+  shell: chflags nohidden ~/Library
+
+- name: "UpAndRun | Mac OS X: Show status bar in Finder"
+  shell: defaults write com.apple.finder ShowStatusBar -bool true
+
+- name: "UpAndRun | Mac OS X: Show path bar in Finder"
+  shell: defaults write com.apple.finder ShowPathbar -bool true
+
+- name: "UpAndRun | Mac OS X: Show path bar in Finder"
+  shell: defaults write com.apple.finder ShowPathbar -bool true
+
+- name: "UpAndRun | Mac OS X: Restart Dock"
+  shell: killall Dock
+
+
