@@ -14,7 +14,7 @@ Up&Run is a helper to automate the setup of your Mac. I use it to give me more t
 
 Up&Run is doing...
 
-* installing Applciations http://caskroom.io/
+* installing Applications via Caskroom http://caskroom.io/
 * installing Brews http://brew.sh/
 * changing Mac OS X settings like reduce transparency or change Dock icon size
 
@@ -77,3 +77,7 @@ INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PA
 PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE 
 FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, 
 ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## THANK YOU
+
+Don’t hesitate to drop me some lines. Ping me on Twitter @designerdrug and follow my tweets about my development and design stuff. 
