@@ -80,4 +80,4 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEAL
 
 ## THANK YOU
 
-Don’t hesitate to drop me some lines. Ping me on Twitter @designerdrug and follow my tweets about my development and design stuff. 
+Don’t hesitate to drop me some lines. Ping me on Twitter **[@designerdrug](https://twitter.com/designerdrug)** and follow my tweets about my development and design stuff. 
