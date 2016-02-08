@@ -10,7 +10,7 @@ Just use Up&Run and use your time more effectively.
 
 ## BACKGROUND
 
-Up&Run is a helper to automate the setup of your Mac. I use it to give me more time for more exciting stuff. Up&Run is basically just a bit Bash and Ansible. It works, but it is still under development and is just tested under El Capitan.
+Up&Run is a helper to automate the setup of your Mac. I use it to give me more time for more exciting stuff. Up&Run is basically just a bit Bash and **[Ansible](http://www.ansible.com/)**. It works, but it is still under development and is just tested under El Capitan.
 
 Up&Run is doing...
 
