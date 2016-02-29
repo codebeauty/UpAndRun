@@ -1,0 +1,16 @@
+---
+
+- name: UpAndRun | Create Users
+  command: dscl . create /Users/{{ item.name }}
+  with_items: users
+  when: users is defined
+
+- name: UpAndRun | Set real names of Users
+  command: 'dscl . create /Users/{{ item.name }} RealName "{ item.first }} {{ item.last }}"'
+  with_items: users
+  when: users is defined
+
+- name: UpAndRun | Set ID for every new User
+  command: "dscl . create /Users/{{ item.name }} UniqueID 1982"
+  with_items: users
+  when: users is defined

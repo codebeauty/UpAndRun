@@ -29,8 +29,18 @@
       - jq
       - mysql
       - openssl
+    users: 
+      - name:   mbachmann
+        first:  Mathias
+        last:   Bachmann
+        mail:   design@designerdrug.net
+      - name:   gshumway
+        first:  Gordon
+        last:   Shumway
+        mail:   design@designerdrug.net
   tasks:
-    - include: tasks/checkAndSetupBasics.yml
-    - include: tasks/installApplications.yml
-    - include: tasks/installBrews.yml
-    - include: tasks/settings/changeMacOSXSettings.yml
+    #- include: tasks/checkAndSetupBasics.yml            tags=basics
+    #- include: tasks/installApplications.yml            tags=apps
+    #- include: tasks/installBrews.yml                   tags=tools
+    #- include: tasks/settings/changeMacOSXSettings.yml  tags=os
+    - include: tasks/settings/createUser.yml            tags=user
