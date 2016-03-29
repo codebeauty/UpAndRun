@@ -1,5 +1,6 @@
 ![alt tag](http://designerdrug.de/public/upandrun.png "Up and Run for Mac OS X")
 
+[![Twitter: @designerdrug](https://img.shields.io/badge/contact-@designerdrug-blue.svg?style=flat-square)](https://twitter.com/designerdrug)
 
 ## WHAT IS Up&Run
 
