@@ -12,13 +12,13 @@ then
     if ! [ `which brew` ]; then
     	echo 'Up&Run | Install Homebrew'
     	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" 
+    	
+    	echo 'Up&Run | Updating Homebrew...'
+		brew update	&> /dev/null
+		brew tap caskroom/versions &> /dev/null
     fi
 
     if [ `which brew` ]; then
-    	echo 'Up&Run | Updating Homebrew...'
-		#brew update	&> /dev/null
-		brew tap caskroom/versions &> /dev/null
- 	
 		if ! [ `brew ls --versions ansible` ]; then
 			echo 'Up&Run | Installing Ansible...'
 			brew install ansible &> /dev/null

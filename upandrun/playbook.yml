@@ -3,44 +3,47 @@
   vars:
     applications:
       - 1password
-      - adium
       - alfred
+      - slack
       - charles
       - dropbox
-      - duet
       - firefox
       - google-chrome
-      - handbrake
-      - microsoft-office
       - phpstorm
+      - intellij-idea
       - sequel-pro
       - sketch
       - sourcetree
       - sublime-text3
       - virtualbox
+      - paw
+      - iterm2
+      - spotify
     brews:
       - rbenv
       - ruby-build
+      - ruby
       - node
       - wget
       - git
+      - bash-completion
       - bash
-      - ruby
       - jq
-      - mysql
       - openssl
     users: 
-      - name:   mbachmann
+      - id:     550
+        name:   mbachmann
         first:  Mathias
         last:   Bachmann
         mail:   design@designerdrug.net
-      - name:   gshumway
+      - id:     560
+        name:   alf
         first:  Gordon
         last:   Shumway
         mail:   design@designerdrug.net
   tasks:
-    #- include: tasks/checkAndSetupBasics.yml            tags=basics
-    #- include: tasks/installApplications.yml            tags=apps
-    #- include: tasks/installBrews.yml                   tags=tools
-    #- include: tasks/settings/changeMacOSXSettings.yml  tags=os
+    - include: tasks/checkAndSetupBasics.yml            tags=basics
+    - include: tasks/installApplications.yml            tags=apps
+    - include: tasks/installBrews.yml                   tags=tools
     - include: tasks/settings/createUser.yml            tags=user
+    - include: tasks/settings/changeMacOSXSettings.yml  tags=os

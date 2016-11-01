@@ -10,7 +10,12 @@
   with_items: users
   when: users is defined
 
+- name: UpAndRun | Set Bash for every User
+  command: 'dscl . create /Users/{{ item.name }} UserShell /bin/bash'
+  with_items: users
+  when: users is defined
+
 - name: UpAndRun | Set ID for every new User
-  command: "dscl . create /Users/{{ item.name }} UniqueID 1982"
+  command: "dscl . create /Users/{{ item.name }} UniqueID {{ item.id }}"
   with_items: users
   when: users is defined
