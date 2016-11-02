@@ -2,7 +2,7 @@
 
 - name: UpAndRun | Install applications
   homebrew_cask:
-    name: "{{ item }}"
+    name: '{{ item }}'
     state: present
-  with_items: applications
+  with_items: '{{apps}}'
   when: isBrewInstalled

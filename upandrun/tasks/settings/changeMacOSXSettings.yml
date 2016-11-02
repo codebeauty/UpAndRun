@@ -1,5 +1,4 @@
 ---
-
 - name: "UpAndRun | Mac OS X: Set icon size in Dock to 32"
   shell: defaults write com.apple.dock tilesize -int 32
 

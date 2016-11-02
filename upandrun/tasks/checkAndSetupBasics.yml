@@ -1,5 +1,4 @@
 ---
-
 - name: UpAndRun | Check Homebrew is installed
   stat: path=/usr/local/bin/brew
   register: isBrewInstalled

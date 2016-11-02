@@ -1,0 +1,14 @@
+---
+tools:
+  - coreutils
+  - rbenv
+  - ruby-build
+  - ruby
+  - node
+  - wget
+  - git
+  - bash-completion
+  - bash
+  - jq
+  - openssl
+  - mas

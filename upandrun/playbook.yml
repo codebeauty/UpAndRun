@@ -1,49 +1,14 @@
 ---
 - hosts: all
-  vars:
-    applications:
-      - 1password
-      - alfred
-      - slack
-      - charles
-      - dropbox
-      - firefox
-      - google-chrome
-      - phpstorm
-      - intellij-idea
-      - sequel-pro
-      - sketch
-      - sourcetree
-      - sublime-text3
-      - virtualbox
-      - paw
-      - iterm2
-      - spotify
-    brews:
-      - rbenv
-      - ruby-build
-      - ruby
-      - node
-      - wget
-      - git
-      - bash-completion
-      - bash
-      - jq
-      - openssl
-    users: 
-      - id:     550
-        name:   mbachmann
-        first:  Mathias
-        last:   Bachmann
-        mail:   design@designerdrug.net
-      - id:     560
-        name:   alf
-        first:  Gordon
-        last:   Shumway
-        mail:   design@designerdrug.net
+  vars_files:
+    - ../settings/tools.yml
+    - ../settings/apps.yml
+    - ../settings/users.yml
   tasks:
-    - include: tasks/checkAndSetupBasics.yml            tags=basics
-    - include: tasks/installApplications.yml            tags=apps
-    - include: tasks/installBrews.yml                   tags=tools
-    - include: tasks/settings/createUser.yml            tags=user
-    - include: tasks/settings/changeMacOSXSettings.yml  tags=os
+    - include: tasks/checkAndSetupBasics.yml                        tags=basics
+    - include: tasks/installApps.yml                                tags=apps
+    - include: tasks/installTools.yml                               tags=tools
+    #- include: tasks/additionalTasks.yml                            tags=mixed
+    #- include: tasks/settings/createUser.yml                        tags=user
+    #- include: tasks/settings/changeMacOSXSettings.yml              tags=os
+    #- include: tasks/settings/cleanUp.yml                           tags=clean
