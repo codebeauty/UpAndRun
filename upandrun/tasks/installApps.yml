@@ -1,6 +1,6 @@
 ---
 
-- name: UpAndRun | Install applications
+- name: Up&Run | Install applications
   homebrew_cask:
     name: '{{ item }}'
     state: present

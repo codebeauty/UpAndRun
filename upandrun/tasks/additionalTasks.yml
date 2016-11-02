@@ -1,2 +1,2 @@
-- name: UpAndRun | Create Link for tac
+- name: Up&Run | Create Link for tac
   command: ln -s /usr/local/bin/gtac /usr/local/bin/tac

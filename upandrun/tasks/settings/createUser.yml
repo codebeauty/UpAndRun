@@ -1,21 +1,21 @@
 ---
 
-- name: UpAndRun | Create Users
+- name: Up&Run | Create Users
   command: dscl . create /Users/{{ item.name }}
   with_items: users
   when: users is defined
 
-- name: UpAndRun | Set real names of Users
+- name: Up&Run | Set real names of Users
   command: 'dscl . create /Users/{{ item.name }} RealName "{ item.first }} {{ item.last }}"'
   with_items: users
   when: users is defined
 
-- name: UpAndRun | Set Bash for every User
+- name: Up&Run | Set Bash for every User
   command: 'dscl . create /Users/{{ item.name }} UserShell /bin/bash'
   with_items: users
   when: users is defined
 
-- name: UpAndRun | Set ID for every new User
+- name: Up&Run | Set ID for every new User
   command: "dscl . create /Users/{{ item.name }} UniqueID {{ item.id }}"
   with_items: users
   when: users is defined
