@@ -24,7 +24,7 @@ then
 	
 	    if [[ `which ansible-playbook` ]]; then
 			echo 'Up&Run | Run Ansible Playbook'
-			ansible-playbook -i Up&Run/hosts Up&Run/playbook.yml
+			ansible-playbook -i upandrun/assets/hosts upandrun/playbook.yml
 		fi
 	fi
 else

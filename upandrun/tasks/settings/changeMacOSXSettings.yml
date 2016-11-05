@@ -14,6 +14,9 @@
 - name: "Up&Run | Mac OS X: Show path bar in Finder"
   shell: defaults write com.apple.finder ShowPathbar -bool true
 
+- name: "Up&Run | Disable Google Chrome’s Two-Finger Swipe Navigation"
+  shell: defaults write com.google.Chrome.plist AppleEnableSwipeNavigateWithScrolls -bool false
+
 - name: "Up&Run | Mac OS X: Restart Dock"
   shell: killall Dock
 
