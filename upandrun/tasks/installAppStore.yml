@@ -1,0 +1,14 @@
+---
+- name: Up&Run | Install MAS-CLI 
+  homebrew: name=mas state=present
+  when: isBrewInstalled
+  
+- name: Up&Run | Update macOS
+  command: mas upgrade
+  when: isBrewInstalled
+
+- name: Up&Run | Install Apps from App Store 
+  command: mas install {{item}}
+  with_items: '{{appstore}}'
+  when: isBrewInstalled
+  

@@ -1,5 +1,4 @@
 ---
-
 - name: Up&Run | Install applications
   homebrew_cask:
     name: '{{ item }}'

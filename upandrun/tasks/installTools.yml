@@ -1,3 +1,4 @@
+---
 - name: Up&Run | Install Tools 
   homebrew: name={{ item }} state=present
   with_items: '{{tools}}'

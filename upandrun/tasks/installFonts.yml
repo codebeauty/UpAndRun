@@ -1,0 +1,7 @@
+---
+- name: Up&Run | Install Fonts
+  homebrew_cask:
+    name: '{{ item }}'
+    state: present
+  with_items: '{{fonts}}'
+  when: isBrewInstalled

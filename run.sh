@@ -13,6 +13,7 @@ then
 	    	echo 'Up&Run | Updating Homebrew...'
 			brew update	&> /dev/null
 			brew tap caskroom/versions &> /dev/null
+			brew tap caskroom/fonts &> /dev/null
 	    fi
 	
 	    if [[ `which brew` ]]; then

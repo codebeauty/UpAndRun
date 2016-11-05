@@ -1,15 +1,19 @@
 ---
 - hosts: all
   vars_files:
+    - ../settings/appstore.yml
+    - ../settings/fonts.yml
     - ../settings/tools.yml
     - ../settings/apps.yml
     - ../settings/users.yml
   tasks:
     - include: tasks/checkAndSetupBasics.yml                        tags=basics
+    - include: tasks/installAppStore.yml                            tags=mas
     - include: tasks/installApps.yml                                tags=apps
     - include: tasks/installTools.yml                               tags=tools
-    #- include: tasks/additionalTasks.yml                            tags=mixed
-    #- include: tasks/settings/createUser.yml                        tags=user
-    #- include: tasks/settings/changeMacOSXSettings.yml              tags=os
-    #- include: tasks/settings/cleanUp.yml                           tags=clean
+    - include: tasks/additionalTasks.yml                            tags=mixed
+    - include: tasks/installFonts.yml                               tags=fonts
+    - include: tasks/settings/createUser.yml                        tags=user
+    - include: tasks/settings/changeMacOSXSettings.yml              tags=os
+    - include: tasks/cleanUp.yml                                    tags=clean
     

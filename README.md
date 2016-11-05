@@ -15,13 +15,13 @@ It works, but it is still under development and is just tested under Mac OS X El
 Up&Run is doing...
 
 * installing Applications via Caskroom [http://caskroom.io/](http://caskroom.io/)
-* installing Brews [http://brew.sh/](http://brew.sh/)
+* installing Brews 
 * changing Mac OS X settings like reduce transparency or change Dock icon size
 
 
 ## INSTRUCTIONS
 Edit **settings/apps.yml** and **settings/tools.yml** in a way that only your required applications 
-and tools are listed. Check http://caskroom.io/search to find more applications you need.
+and tools are listed. Check [http://caskroom.io/search](http://caskroom.io/search) to find more applications you need.
 
 You can also create new User accounts by updating **settings/users.yml**.
 

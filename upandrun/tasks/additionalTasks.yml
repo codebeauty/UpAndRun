@@ -1,3 +1,4 @@
+---
 # Custom additional tasks. Feel free... :)
 - name: Up&Run | Create Link for tac
-  command: ln -s /usr/local/bin/gtac /usr/local/bin/tac
+  file: src=/usr/local/bin/gtac dest=/usr/local/bin/tac state=link

@@ -2,7 +2,6 @@
 apps:
   - 1password
   - alfred
-  - slack
   - charles
   - dropbox
   - firefox
@@ -14,6 +13,7 @@ apps:
   - sourcetree
   - sublime-text
   - virtualbox
+  - vagrant
   - paw
   - iterm2
   - spotify

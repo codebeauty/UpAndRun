@@ -11,4 +11,3 @@ tools:
   - bash
   - jq
   - openssl
-  - mas

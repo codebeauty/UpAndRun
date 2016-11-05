@@ -1,0 +1,3 @@
+---
+- name: Up&Run | Reboot
+  command: dscl . create /Users/{{ item.name }}
