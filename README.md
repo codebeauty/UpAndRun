@@ -1,4 +1,4 @@
-![alt tag](http://designerdrug.de/public/Up&Run.png "Up and Run for Mac OS X")
+![alt tag](http://designerdrug.de/public/upandrun.png "Up and Run for macOS")
 
 [![Twitter: @designerdrug](https://img.shields.io/badge/contact-@designerdrug-blue.svg?style=flat-square)](https://twitter.com/designerdrug)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://opensource.org/licenses/MIT)
