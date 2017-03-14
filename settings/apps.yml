@@ -6,6 +6,7 @@ apps:
   - firefox
   - google-chrome
   - phpstorm
+  - visual-studio-code
   - sequel-pro
   - sketch
   - sourcetree
@@ -17,3 +18,4 @@ apps:
   - spotify
   - onyx
   - skype
+  - skype-for-business
