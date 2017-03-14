@@ -7,10 +7,9 @@
 You are an Administrator and you get new MacBooks? All Macs should have the same applications and settings?
 Just use Up&Run and use your time more effectively.
 
-
 ## BACKGROUND
 Up&Run is a helper to automate the setup of your Mac. I'm using it to give me more time for more exciting stuff. Up&Run is basically just a bit Bash and **[Ansible](http://www.ansible.com/)**. 
-It works, but it is still under development and is just tested under Mac OS X El Capitan, Yosemite and macOS Sierra.
+Just tested under Yosemite and macOS Sierra.
 
 Up&Run is doing...
 
@@ -29,10 +28,13 @@ Check [http://caskroom.io/search](http://caskroom.io/search) to find more applic
 
 Just run **./run.sh** in your Terminal and lean back. Coffee or Whiskey time.
 
-## LICENSE
-The Up&Run is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
-
 ## THANK YOU
 Don’t hesitate to drop me some lines. Ping me on Twitter **[@designerdrug](https://twitter.com/designerdrug)** and 
 follow my tweets about my development and design stuff. 
+
+## Bugs & Security Vulnerabilities
+If you discover a bug or security vulnerability within Up&Run, please send an email to 
+Mathias Bachmann at **[bug@designerdrug.net](mailto:bug@designerdrug.net)**.
+
+## LICENSE
+The Up&Run is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
