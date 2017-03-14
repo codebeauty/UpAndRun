@@ -15,18 +15,19 @@ It works, but it is still under development and is just tested under Mac OS X El
 Up&Run is doing...
 
 * installing Applications via Caskroom [http://caskroom.io/](http://caskroom.io/)
-* installing Brews 
+* installing Brews via Homebrew
+* can install Apps from Apple App Store via [MAS-CLI](https://github.com/mas-cli/mas) 
 * changing Mac OS X settings like reduce transparency or change Dock icon size
 
-
 ## INSTRUCTIONS
-Edit **settings/apps.yml** and **settings/tools.yml** in a way that only your required applications 
-and tools are listed. Check [http://caskroom.io/search](http://caskroom.io/search) to find more applications you need.
+Edit 
+* **settings/apps.yml** for your Apps via Caskroom
+* **settings/tools.yml** for your Tools via Brew
+* **settings/appstore.yml** for your Apple App Store Apps
 
-You can also create new User accounts by updating **settings/users.yml**.
+Check [http://caskroom.io/search](http://caskroom.io/search) to find more applications you need.
 
-Just run **./run.sh** in your Terminal and lean back. Coffee time.
-
+Just run **./run.sh** in your Terminal and lean back. Coffee or Whiskey time.
 
 ## LICENSE
 The Up&Run is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

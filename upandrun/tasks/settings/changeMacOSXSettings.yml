@@ -1,23 +1,20 @@
 ---
-- name: "Up&Run | Mac OS X: Set icon size in Dock to 32"
+- name: "Up&Run | macOS: Set icon size in Dock to 32"
   shell: defaults write com.apple.dock tilesize -int 32
 
-- name: "Up&Run | Mac OS X: Avoid .DS_Store files on network"
+- name: "Up&Run | macOS: Avoid .DS_Store files on network"
   shell: defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
-- name: "Up&Run | Mac OS X: Don't hide ~/Library"
+- name: "Up&Run | macOS: Don't hide ~/Library"
   shell: chflags nohidden ~/Library
 
-- name: "Up&Run | Mac OS X: Show status bar in Finder"
+- name: "Up&Run | macOS: Show status bar in Finder"
   shell: defaults write com.apple.finder ShowStatusBar -bool true
 
-- name: "Up&Run | Mac OS X: Show path bar in Finder"
+- name: "Up&Run | macOS: Show path bar in Finder"
   shell: defaults write com.apple.finder ShowPathbar -bool true
 
-- name: "Up&Run | Disable Google Chrome’s Two-Finger Swipe Navigation"
-  shell: defaults write com.google.Chrome.plist AppleEnableSwipeNavigateWithScrolls -bool false
-
-- name: "Up&Run | Mac OS X: Restart Dock"
+- name: "Up&Run | macOS: Restart Dock"
   shell: killall Dock
 
 

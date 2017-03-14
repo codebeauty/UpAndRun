@@ -2,12 +2,10 @@
 apps:
   - 1password
   - alfred
-  - charles
   - dropbox
   - firefox
   - google-chrome
   - phpstorm
-  - intellij-idea
   - sequel-pro
   - sketch
   - sourcetree
@@ -17,3 +15,5 @@ apps:
   - paw
   - iterm2
   - spotify
+  - onyx
+  - skype
